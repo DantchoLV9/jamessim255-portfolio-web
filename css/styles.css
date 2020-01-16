@@ -64,3 +64,6 @@ h2:after {
     object-fit: cover;
 }
 
+.social-link {
+    fill: #404040;
+}
