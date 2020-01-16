@@ -1,5 +1,8 @@
 body {
     font-family: 'Nunito', sans-serif !important;
+    background-color: rgb(241, 241, 241);
+    color: #404040;
+    min-width: 257px;
 }
 
 nav {
@@ -7,9 +10,35 @@ nav {
     text-transform: uppercase;
 }
 
+h2 {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+h2:before,
+h2:after {
+    content: '';
+    border-top: 2px solid;
+}
+
+.neumorphism {
+    box-shadow: -5px -5px 15px 0 rgba(255, 255, 255, 1),
+    5px 5px 15px 0 rgba(0, 0, 0, 0.17);
+    transition: all .3s ease-in-out;
+}
+
+.neumorphism:hover {
+    box-shadow: -5px -5px 25px 0 rgba(255, 255, 255, 1),
+    5px 5px 25px 0 rgba(0, 0, 0, 0.17);
+    transform: scale(1.03)
+}
+
 .navbar-nav {
     width: 100%;
-    
 }
 
 .navbar-nav, a{
@@ -24,5 +53,14 @@ nav {
 
 .opacity-1 {
     opacity: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
 }
 
